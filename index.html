@@ -11,16 +11,29 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="story.html">Our Story</a></li>
+       <li class="divider"></li>
+    <li><a href="#!">Daniel</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Tomas</a></li>
+        <li class="divider"></li>
+    <li><a href="#!">Ernest</a></li>
+  </ul>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Logo</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="bars.html">Bars</a></li>
+        <li><a href="craft.html">Craft beer</a></li>
+        
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">About Us<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
   <div class="section no-pad-bot" id="index-banner">
