@@ -26,7 +26,6 @@
   <!--  Scripts-->
 
 <script src="js/init.js"></script>
-<script src="//tympanus.net/codrops/adpacks/demoad.js"></script>
 
   </body>
 </html>
