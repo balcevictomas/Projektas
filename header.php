@@ -42,6 +42,12 @@
        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
        
       <ul class="right hide-on-med-and-down">
+                <li><a href="login.php?log=1">
+               <?php if(isset($sesion['id'])){echo "Log Out";}else{echo "Log in";} ?>
+            </a></li>
+        <li><a href="login.php?log=2">
+               <?php if(isset($sesion['id'])){echo "$id";}else{echo "Register";} ?>
+            </a></li>
 
         <li><a href="index.php">Home</a></li>
         <li><a href="news.php">News</a></li>
@@ -55,6 +61,13 @@
 
       </ul>
       <ul class="side-nav" id="mobile-demo">
+              <li><a href="login.php?log=1">
+               <?php if(isset($sesion['id'])){echo "Log Out";}else{echo "Log in";} ?>
+            </a></li>
+        <li><a href="login.php?log=2">
+               <?php if(isset($sesion['id'])){echo "$id";}else{echo "Register";} ?>
+            </a></li>
+
         <li><a href="index.php">Home</a></li>
         <li><a href="news.php">News</a></li>
         <li><a href="bars.php">Bars</a></li>
