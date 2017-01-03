@@ -3,12 +3,14 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Starter Template - Materialize</title>
+  <title>iBar - find your bar</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
 </head>
 <body>
 
@@ -22,8 +24,8 @@
     <li><a href="#!">Ernest</a></li>
   </ul>
   <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
+    <div class="nav-wrapper grey">
+      <a href="index.html" class="brand-logo"><img class="LOGO" src="https://s28.postimg.org/6msmhc8cd/logo.png"></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="index.html">Home</a></li>
         <li><a href="news.html">News</a></li>
@@ -36,64 +38,117 @@
 
     </div>
   </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">Starter Template</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-      </div>
-      <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-      </div>
-      <br><br>
-
-    </div>
-  </div>
-
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+  <div class="backgroundcolor">
+    
+          
+<img id="mainimg" src="images/main_picture.png"> 
+<!--   SEARCH'as - PRADZIA   -->          
+  <form onsubmit="submitFn(this, event);">
+    <div class="search-wrapper">
+      <div class="input-holder">
+        <input type="text" class="search-input" placeholder="Type to search" />
+        <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
           </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
+            <span class="close" onclick="searchToggle(this, event);"></span>
+          <div class="result-container">
       </div>
-
     </div>
-    <br><br>
+  </form>
+<!--   SEARCH'as - PABAIGA   --> 
+<div class="line-separator"></div>
+        <!--   TOP 4 barai - keturi langai - PRADZIA  -->
+        <div class="row"> 
+        <!--   pirmas langas   -->
+          <div class="col s12 m3 ">
+            <div class="card z-depth-5">
+              <div class="card-image">
+                <img src="http://photos.mandarinoriental.com/is/image/MandarinOriental/excelsior-restaurant-dickens-bar?$DetailBannerHeight$">
+                <span class="card-title">Sky Bar</span>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Read more...<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+        <!--   pirmo lango pabaiga   -->
+        <!--   antras langas   -->
+          <div class="col s12 m3">
+            <div class="card z-depth-5">
+              <div class="card-image">
+                <img src="https://gur2d1301.files.wordpress.com/2014/05/mainfeatureimg_700x440_black_bar2.jpg">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Read more...<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+        <!--   antro lango pabaiga   -->
+        <!--   trecias langas   -->
+          <div class="col s12 m3">
+            <div class="card z-depth-5">
+              <div class="card-image">
+                <img src="http://www.thetemplebarpub.com/pics/homepage_mainpic1.jpg">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Read more...<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+        <!--   trecio lango pabaiga   -->
+        <!--   ketvirtas langas   -->
+          <div class="col s12 m3">
+            <div class="card z-depth-5">
+              <div class="card-image">
+                <img src="https://s-media-cache-ak0.pinimg.com/originals/2e/46/f6/2e46f6148ace9c6cf269e3f0322f8ab0.jpg">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Read more...<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+        <!--   ketvirto lango pabaiga   -->
+      </div>
+      <!--   TOP 4 barai - keturi langai - PABAIGA   -->
+      <div class="section">
 
-    <div class="section">
 
-    </div>
-  </div>
-
-  <footer class="page-footer orange">
+<div class="content">
+  <figure class="effect-winston">
+  <img src="http://www.thetemplebarpub.com/pics/homepage_mainpic1.jpg" alt="img30">
+      <figcaption>
+        <h2>Jolly <span>Winston</span></h2>
+          <p>
+            <a href="#"><i class="fa fa-fw fa-star-o"></i></a>
+            <a href="#"><i class="fa fa-fw fa-comments-o"></i></a>
+            <a href="#"><i class="fa fa-fw fa-envelope-o"></i></a>
+          </p>
+      </figcaption>     
+  </figure>
+</div>
+      </div>
+ </div>
+ </div>
+</div>
+  <footer class="page-footer grey">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -131,9 +186,9 @@
 
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+
+<script src="js/init.js"></script>
+<script src="//tympanus.net/codrops/adpacks/demoad.js"></script>
 
   </body>
 </html>
