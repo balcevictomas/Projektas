@@ -313,3 +313,36 @@ body .slider .indicators .indicator-item.active {
 @media screen and (max-width: 560px) {
     .search-wrapper.active .input-holder {width:200px;}
 }
+
+
+
+/*TOMAS*/
+img.map1
+{
+  width: 300px;
+  height: 300px;
+
+}
+img.map2
+{
+  width: 75%;
+}
+img.map3
+{
+  width: 75%;
+  
+}
+
+img.avia_image
+{
+  width: 60%;
+  margin: 0;
+    margin-bottom: 20px;
+}
+ h4.kazkoksTekstas
+ {
+  
+ }
+
+
+ /*TOMAS*/
