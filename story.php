@@ -69,9 +69,9 @@ Užsukę į Alaus Namus Jūs galite paragauti 18 rūšių lietuviško pilstomo a
 Norintiems daugiau sužinoti apie alų, aludarystės meną bei alaus vaidmenį istorijos kontekste – kviečiame į alaus degustacijas, kurios metu ne tik turėsite galimybę paragauti iki 10 rūšių skirtingo stiliaus bei regionų lietuviško alaus, tačiau ir iš diplomuotų alaus žinovų išgirsti kiekvieno jų ypatingą istoriją, sužinoti atsakymus į visus klausimus, susijusius su alumi, jo gamyba, mitais, legendomis ir gandais. </p>
 </div>
 
-<div class="flex_column av_one_third  avia-full-stretch flex_column_table_cell av-equal-height-column av-align-top av-zero-column-padding   avia-builder-el-5  el_after_av_two_third  avia-builder-el-last  " style="border-radius:0px; "><div class="avia-image-container  av-styling-   avia-builder-el-6  avia-builder-el-no-sibling  avia-align-center " itemscope="itemscope" itemtype="https://schema.org/ImageObject"><div class="avia-image-container-inner"><a href="http://alausnamai.lt/wp-content/uploads/2015/10/pagrindine-sale-baras-pano-final1-1030x687.jpg" class="avia_image lightbox-added"><img class="avia_image " src="http://alausnamai.lt/wp-content/uploads/2015/10/pagrindine-sale-baras-pano-final1-845x684.jpg" alt="" title="Alaus namai - Pagrindinė salė" itemprop="contentURL"><span class="image-overlay overlay-type-image" style="left: -5px; top: 0px; overflow: hidden; display: block; height: 480px; width: 602px;"><span class="image-overlay-inside"></span></span></a></div></div></div>
 
 
+<img class="materialboxed" width="650" src="http://alausnamai.lt/wp-content/uploads/2015/10/pagrindine-sale-baras-pano-final1-1030x687.jpg">
 
   </div>
   
@@ -95,8 +95,9 @@ Norintiems ne tik paskanauti tikro, gyvo lietuviško alaus, tačiau taip pat dau
 Jūsų įmonės, šeimos ar draugų šventei galime pasiūlyti specialias programas – nuo viduramžių šventės iki edukacinių tradicinio maisto bei amatų ar sportinių varžybų formato pramogas. Vaikų gimtadieniams esame paruošę daug ypatingų pasiūlymų – nuo jodinėjimo arkliais ir sportinių varžybų, iki teatro pamokėlių ar meduolių kepimo senovinėje duonkepėje.</p>
 </div>
 
-<div class="flex_column av_two_fifth  avia-full-stretch flex_column_table_cell av-equal-height-column av-align-top av-zero-column-padding   avia-builder-el-6  el_after_av_three_fifth  avia-builder-el-last  " style="border-radius:0px; "><div class="avia-image-container  av-styling-   avia-builder-el-7  avia-builder-el-no-sibling  avia-align-center " itemscope="itemscope" itemtype="https://schema.org/ImageObject"><div class="avia-image-container-inner"><a href="http://alausnamai.lt/wp-content/uploads/2015/10/TRIK-8794-1H-web-1030x687.jpg" class="avia_image lightbox-added"><img class="avia_image " src="http://alausnamai.lt/wp-content/uploads/2015/10/TRIK-8794-1H-web-1030x687.jpg" alt="" title="Pilialaukis" itemprop="contentURL"><span class="image-overlay overlay-type-image" style="left: -5px; top: 0px; overflow: hidden; display: block; height: 395px; width: 602px;"><span class="image-overlay-inside"></span></span></a></div></div></div>
 
+
+<img class="materialboxed" width="650" src="http://alausnamai.lt/wp-content/uploads/2015/10/TRIK-8794-1H-web-1030x687.jpg">
 
 
   </div>
