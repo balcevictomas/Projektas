@@ -22,7 +22,6 @@
 </section>
   </footer>
 
-
   <!--  Scripts-->
 
 <script src="js/init.js"></script>
