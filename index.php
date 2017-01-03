@@ -33,8 +33,7 @@
                 <span class="card-title">Sky Bar</span>
               </div>
               <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
+                <p>Čia turės būti mini-aprašymas apie barą iš duomenų bazės.</p>
               </div>
               <div class="card-action">
                 <a href="#">This is a link</a>
@@ -50,8 +49,7 @@
                 <span class="card-title">Card Title</span>
               </div>
               <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
+                <p>Čia turės būti mini-aprašymas apie barą iš duomenų bazės.</p>
               </div>
               <div class="card-action">
                 <a href="#">This is a link</a>
@@ -67,8 +65,7 @@
                 <span class="card-title">Card Title</span>
               </div>
               <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
+                <p>Čia turės būti mini-aprašymas apie barą iš duomenų bazės.</p>
               </div>
               <div class="card-action">
                 <a href="#">This is a link</a>
@@ -84,8 +81,7 @@
                 <span class="card-title">Card Title</span>
               </div>
               <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
+                <p>Čia turės būti mini-aprašymas apie barą iš duomenų bazės.</p>
               </div>
               <div class="card-action">
                 <a href="#">This is a link</a>
