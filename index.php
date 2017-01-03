@@ -100,23 +100,4 @@
 <!--   INDEX PABAIGA   --> 
 <!--   INDEX PABAIGA   --> 
 
-
-<div class="content">
-  <figure class="effect-winston">
-  <img src="http://www.thetemplebarpub.com/pics/homepage_mainpic1.jpg" alt="img30">
-      <figcaption>
-        <h2>Jolly <span>Winston</span></h2>
-          <p>
-            <a href="#"><i class="fa fa-fw fa-star-o"></i></a>
-            <a href="#"><i class="fa fa-fw fa-comments-o"></i></a>
-            <a href="#"><i class="fa fa-fw fa-envelope-o"></i></a>
-          </p>
-      </figcaption>     
-  </figure>
-</div>
-      </div>
- </div>
- </div>
-</div>
-
 <?php include 'footer.php'; ?>
