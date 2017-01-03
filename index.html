@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>iBar - find your bar</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+</head>
+<body>
+
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="story.html">Our Story</a></li>
+       <li class="divider"></li>
+    <li><a href="#!">Daniel</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Tomas</a></li>
+        <li class="divider"></li>
+    <li><a href="#!">Ernest</a></li>
+  </ul>
+  <nav>
+    <div class="nav-wrapper grey">
+      <a href="index.html" class="brand-logo"><img class="LOGO" src="https://s28.postimg.org/6msmhc8cd/logo.png"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="bars.html">Bars</a></li>
+        <li><a href="craft.html">Craft beer</a></li>
+        
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">About Us<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+
+    </div>
+  </nav>
+  <div class="backgroundcolor">
+    
+          
+<img id="mainimg" src="images/main_picture.png"> 
+<!--   SEARCH'as - PRADZIA   -->          
+  <form onsubmit="submitFn(this, event);">
+    <div class="search-wrapper">
+      <div class="input-holder">
+        <input type="text" class="search-input" placeholder="Type to search" />
+        <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+          </div>
+            <span class="close" onclick="searchToggle(this, event);"></span>
+          <div class="result-container">
+      </div>
+    </div>
+  </form>
+<!--   SEARCH'as - PABAIGA   --> 
+<div class="line-separator"></div>
+        <!--   TOP 4 barai - keturi langai - PRADZIA  -->
+        <div class="row"> 
+        <!--   pirmas langas   -->
+          <div class="col s12 m3 ">
+            <div class="card z-depth-5">
+              <div class="card-image">
+                <img src="http://photos.mandarinoriental.com/is/image/MandarinOriental/excelsior-restaurant-dickens-bar?$DetailBannerHeight$">
+                <span class="card-title">Sky Bar</span>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Read more...<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+        <!--   pirmo lango pabaiga   -->
+        <!--   antras langas   -->
+          <div class="col s12 m3">
+            <div class="card z-depth-5">
+              <div class="card-image">
+                <img src="https://gur2d1301.files.wordpress.com/2014/05/mainfeatureimg_700x440_black_bar2.jpg">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Read more...<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+        <!--   antro lango pabaiga   -->
+        <!--   trecias langas   -->
+          <div class="col s12 m3">
+            <div class="card z-depth-5">
+              <div class="card-image">
+                <img src="http://www.thetemplebarpub.com/pics/homepage_mainpic1.jpg">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Read more...<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+        <!--   trecio lango pabaiga   -->
+        <!--   ketvirtas langas   -->
+          <div class="col s12 m3">
+            <div class="card z-depth-5">
+              <div class="card-image">
+                <img src="https://s-media-cache-ak0.pinimg.com/originals/2e/46/f6/2e46f6148ace9c6cf269e3f0322f8ab0.jpg">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Read more...<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+        <!--   ketvirto lango pabaiga   -->
+      </div>
+      <!--   TOP 4 barai - keturi langai - PABAIGA   -->
+      <div class="section">
+
+
+<div class="content">
+  <figure class="effect-winston">
+  <img src="http://www.thetemplebarpub.com/pics/homepage_mainpic1.jpg" alt="img30">
+      <figcaption>
+        <h2>Jolly <span>Winston</span></h2>
+          <p>
+            <a href="#"><i class="fa fa-fw fa-star-o"></i></a>
+            <a href="#"><i class="fa fa-fw fa-comments-o"></i></a>
+            <a href="#"><i class="fa fa-fw fa-envelope-o"></i></a>
+          </p>
+      </figcaption>     
+  </figure>
+</div>
+      </div>
+ </div>
+ </div>
+</div>
+  <footer class="page-footer grey">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+
+<script src="js/init.js"></script>
+<script src="//tympanus.net/codrops/adpacks/demoad.js"></script>
+
+  </body>
+</html>
