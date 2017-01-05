@@ -1,3 +1,8 @@
+<?php
+session_start()
+ ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +26,7 @@
 </head>
 <body>
 
-  <nav class="naujasnav posabsolute">
+  <nav class="naujasnav "
     <div class="navbar-wrapper">
     <a href="index.php" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="left hide-on-med-and-down">
@@ -32,9 +37,9 @@
         <li><a class="white-text waves-effect btn-flat myslqbuttons" href="#">Apie mus</a></li>
         <li><a class="white-text waves-effect btn-flat myslqbuttons" href="story.php">Our Story</a></li>
       </ul>
-      <ul class="right hide-on-med-and-down">  
-        <li><a class="black-text waves-effect btn grey lighten-4 opacity myslqbuttons" href="login.php?log=1"><?php if(isset($sesion['id'])){echo "Log Out";}else{echo "Log in";} ?></a></li>
-        <li><a class="black-text waves-effect btn grey lighten-4 opacity myslqbuttons" href="login.php?log=2"><?php if(isset($sesion['id'])){echo "$id";}else{echo "Register";} ?></a></li>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="" href="login.php?log=1"> <?php if(isset($_SESSION['ID'])){echo "Log Out";}else{echo "Log in";} ?></a></li>
+        <li><a class="" href="login.php?log=2"><?php if(isset($_SESSION['ID'])){echo "My profile";}else{echo "Register";} ?></a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li><a href="index.php">Pradžia</a></li>
@@ -43,8 +48,8 @@
         <li><a href="craft.php">Craft Alus</a></li>
         <li><a href="#">Apie mus</a></li>
         <li><a href="story.php">Our Story</a></li>
-        <li><a href="login.php?log=1"><?php if(isset($sesion['id'])){echo "Log Out";}else{echo "Log in";} ?></a></li>
-        <li><a href="login.php?log=2"><?php if(isset($sesion['id'])){echo "$id";}else{echo "Register";} ?></a></li>
+        <li><a href="login.php?log=1"><?php if(isset($_SESSION['ID'])){echo "Log Out";}else{echo "Log in";} ?></a></li>
+        <li><a href="login.php?log=2"><?php if(isset($_SESSION['ID'])){echo "My profile";}else{echo "Register";} ?></a></li>
       </ul>
     </div>
   </nav>
