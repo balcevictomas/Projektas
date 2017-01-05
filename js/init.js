@@ -3,7 +3,7 @@
 (function($){
   $(function(){
 
-    $('.button-collapse').sideNav();
+    $(".button-collapse").sideNav();
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
@@ -55,9 +55,9 @@ function searchToggle(obj, evt){
         function submitFn(obj, evt){
             value = $(obj).find('.search-input').val().trim();
 
-            _html = "Yup yup! Your search text sounds like this: ";
+            
             if(!value.length){
-                _html = "Yup yup! Add some text friend :D";
+                
             }
             else{
                 _html += "<b>" + value + "</b>";
