@@ -1,3 +1,4 @@
+
 <?php include 'header.php'; ?>
 
 <!--   INDEX PRADZIA   -->
@@ -7,9 +8,11 @@
   <!--   MAIN IMAGE PRADZIA   -->    
 
 
-<div id="container">
+
   <img class="mainimg" src="images/main_picture.png"> 
-   <div id="alligned">
+
+  <!--   MAIN IMAGE PABAIGA   -->
+
 <!--   SEARCH'as - PRADZIA   -->          
     <form onsubmit="submitFn(this, event);">
       <div class="search-wrapper">
@@ -22,8 +25,6 @@
         </div>
       </div>
     </form>
-    </div>
-</div>
 <!--   SEARCH'as - PABAIGA   --> 
 
 
@@ -100,5 +101,6 @@
 <!--   INDEX PABAIGA   --> 
 <!--   INDEX PABAIGA   --> 
 <!--   INDEX PABAIGA   --> 
+
 
 <?php include 'footer.php'; ?>
