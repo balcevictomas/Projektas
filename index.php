@@ -7,15 +7,13 @@
   <!--   MAIN IMAGE PRADZIA   -->    
 
 
-
+<div id="container">
   <img class="mainimg" src="images/main_picture.png"> 
-
-  <!--   MAIN IMAGE PABAIGA   -->
-
+   <div id="alligned">
 <!--   SEARCH'as - PRADZIA   -->          
     <form onsubmit="submitFn(this, event);">
-      <div class="search-wrapper">
-        <div class="input-holder">
+      <div class="search-wrapper valign">
+        <div class="input-holder valign">
           <input type="text" class="search-input" placeholder="Type to search" />
           <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
             </div>
@@ -24,6 +22,8 @@
         </div>
       </div>
     </form>
+    </div>
+</div>
 <!--   SEARCH'as - PABAIGA   --> 
 
 

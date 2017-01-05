@@ -9,6 +9,20 @@
 /* Style The Dropdown Button */
 
 /* Wrapper */
+
+#container {
+    position: relative;
+
+}
+#aligned {
+    position: absolute;
+
+
+    top: 50%;
+    left: 50%;
+
+}
+
 .posabsolutesearch {
   position: absolute !important;
   padding-top: 200px !important;
@@ -452,7 +466,7 @@ body .slider .indicators .indicator-item.active {
     background: #EEEEEE;
     padding:0px;
     outline:none;
-    position: relative;
+    position: absolute;
     z-index: 2;
     float:right;
     cursor: pointer;
