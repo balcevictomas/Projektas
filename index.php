@@ -1,3 +1,4 @@
+
 <?php include 'header.php'; ?>
 
 <!--   INDEX PRADZIA   -->
@@ -100,5 +101,6 @@
 <!--   INDEX PABAIGA   --> 
 <!--   INDEX PABAIGA   --> 
 <!--   INDEX PABAIGA   --> 
+
 
 <?php include 'footer.php'; ?>

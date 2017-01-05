@@ -26,7 +26,9 @@ session_start()
 </head>
 <body>
 
-  <nav class="naujasnav "
+
+  <nav class="naujasnav">
+
     <div class="navbar-wrapper">
     <a href="index.php" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="left hide-on-med-and-down">
@@ -55,10 +57,3 @@ session_start()
   </nav>
 
 
-
-
-    <script>
-
-$('.button-collapse').sideNav();
-
-    </script>
