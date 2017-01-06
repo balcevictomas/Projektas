@@ -9,8 +9,7 @@
 /* Style The Dropdown Button */
 
 /* Wrapper */
-.valign {
- 
+
 
 }
 
@@ -619,6 +618,20 @@ img.avia_image
   text-align: center;
   color: grey;
  }
+
+
+
+}
+div.col-xs-12 
+{
+position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 33.33333%;
+
+}
 
 
  /*TOMAS*/
