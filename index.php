@@ -12,27 +12,29 @@ $result = $conn -> query($sql);
 <!--   INDEX PRADZIA   -->
 <!--   INDEX PRADZIA   -->
 <!--   INDEX PRADZIA   -->
-
+<script> 
+ $("input.autocomplete").autocomplete({
+    data: {
+      "Apple": null,
+      "Microsoft": null,
+      "Google": 'http://placehold.it/250x250'
+    }
+  });
+</script>
 
 <!--   MAIN IMAGE PRADZIA   -->    
-<div id="container">
+<div id="mainimangecenter">
   <img class="mainimg" src="images/main_picture.png"> 
-<!--   MAIN IMAGE PABAIGA   -->    
-    <div id="alligned">
-<!--   SEARCH'as - PRADZIA   -->          
-
-    <form onsubmit="submitFn(this, event);">
-      <div class="search-wrapper">
-        <div class="input-holder">
-          <input type="text" class="search-input" placeholder="Type to search" />
-          <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
-            </div>
-              <span class="close" onclick="searchToggle(this, event);"></span>
-            <div class="result-container">
-        </div>
+      <div id="searchas">
+          <form>
+              <div class="input-field">
+                <input type="text" id="autocomplete-input" class="autocomplete">
+                <label for="autocomplete-input">Search</label>
+              </div>
+            </form>
       </div>
-    </form>
-
+    </div>
+</div>
 <!--   SEARCH'as - PABAIGA   -->
 
 

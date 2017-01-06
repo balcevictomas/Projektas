@@ -9,18 +9,23 @@
 /* Style The Dropdown Button */
 
 /* Wrapper */
-
-
+#mainimangecenter {
+  position: relative;
 }
 
-#container {
-    position: relative;
-
-}
-#aligned {
-    position: absolute;
-    top: 200px;
-    left: 50%;
+#searchas {
+  position: absolute !important;
+      top: 48%;
+      left: 20%;
+      right: 100px;
+      width: 60%;
+      z-index: 4;
+      background: white;
+      opacity: 0.5;
+      border-width: 1px solid;
+      border-color: black;
+      height: 60px;
+      text-align: center;
 
 }
 
@@ -34,13 +39,6 @@
   z-index: 5;
 }
 
-.patternoverlay {
-    position: absolute;
-    background-image: url ("images/fake-luxury.png");
-    background-repeat: repeat !important;
-    z-index: 10;
-
-}
 
 textarea {
    resize: none;
