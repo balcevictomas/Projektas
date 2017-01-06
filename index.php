@@ -1,5 +1,4 @@
 
-
 <?php
  include 'header.php';
  include 'conn.php';
@@ -14,15 +13,14 @@ $result = $conn -> query($sql);
 <!--   INDEX PRADZIA   -->
 <!--   INDEX PRADZIA   -->
 
-  <!--   MAIN IMAGE PRADZIA   -->
 
+<!--   MAIN IMAGE PRADZIA   -->    
+<div id="container">
+  <img class="mainimg" src="images/main_picture.png"> 
+<!--   MAIN IMAGE PABAIGA   -->    
+    <div id="alligned">
+<!--   SEARCH'as - PRADZIA   -->          
 
-
-  <img class="mainimg" src="images/main_picture.png">
-
-  <!--   MAIN IMAGE PABAIGA   -->
-
-<!--   SEARCH'as - PRADZIA   -->
     <form onsubmit="submitFn(this, event);">
       <div class="search-wrapper">
         <div class="input-holder">
@@ -34,8 +32,8 @@ $result = $conn -> query($sql);
         </div>
       </div>
     </form>
-<!--   SEARCH'as - PABAIGA   -->
 
+<!--   SEARCH'as - PABAIGA   -->
 
 
         <!--   TOP 4 barai - keturi langai - PRADZIA  -->
@@ -113,3 +111,4 @@ $result = $conn -> query($sql);
 
 
 <?php include 'footer.php'; ?>
+
