@@ -102,5 +102,6 @@ Jūsų įmonės, šeimos ar draugų šventei galime pasiūlyti specialias progra
 
   </div>
 
+<iframe class="googleMAP" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d815.5374646806675!2d25.278122257787587!3d54.67991467345591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd94136df7a761%3A0xad95acf10f7fb9b4!2sAlaus+Biblioteka!5e0!3m2!1slt!2slt!4v1483728462779" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 <?php include 'footer.php'; ?>

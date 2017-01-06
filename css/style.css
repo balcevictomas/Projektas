@@ -600,7 +600,7 @@ img.map2
 }
 img.map3
 {
-  width: 75%;
+  width: 10%;
   
 }
 
@@ -629,6 +629,34 @@ position: relative;
     float: left;
     width: 33.33333%;
 
+}
+
+img.alaus-biblioteka
+{
+	
+width: 350px;
+
+display: block;
+    margin-left: auto;
+    margin-right: auto
+
+}
+img.Q-polo
+{
+	width: 350px;
+	
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+span.card-title
+{
+
+	text-align: center;
+}
+iframe.googleMAP
+{
+	padding-top:30px; 
 }
 
 
