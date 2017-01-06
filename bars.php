@@ -1,11 +1,33 @@
 <?php include 'header.php'; ?>
 
+<?php
+include'conn.php';
+if(isset($_GET["search_by"]) && $_GET["search_by"] != null){
+
+switch ($_GET["search_by"]) {
+	case '1':	$sql_input ="WHERE Country ='".$_GET['value']."'LIMIT 3" ;	break;
+	case '2':	$sql_input = "WHERE City ='".$_GET['value']."'LIMIT 3";  break;
+	case '3':	$sql_input = "ORDER BY Likes DESC LIMIT 3";	break;
+	case '4':	$sql_input = "WHERE Bar_description LIKE'%".$_GET['value']."%' LIMIT 3";	break;
+	case '5':	$sql_input = "ORDER BY RAND() LIMIT 3";	break;
+
+	default:
+		# code...
+		break;
+}
+$sql ="SELECT * FROM Bars ".$sql_input;
+
+
+$result = $conn -> query($sql);
+
+
+}
+?>
 
 
 
 
 
- 
 
 
 
@@ -17,62 +39,39 @@
   </div>
  -->
 
+ <div class="row">
 
+    <div class="col s12 m8 l10">
 
-<div class="row" style="width: 80%;">
-
- <div class="parallax-container " style = " margin-top: 20px">
-      <div class="parallax"><img src="https://image.freepik.com/free-photo/shot-of-alcohol-with-lemon-slice_1220-228.jpg"></div>
-    </div>
-
-
-
-    <div class="col s12 m8 l10"><h3>Php 3 top (nearest, best, keyword</h3>
-
-
-			  <ul class="collapsible" data-collapsible="accordion">
-			    <li>
-			      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First reveal</div>
-			      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-			    </li>
-			    <li>
-			      <div class="collapsible-header"><i class="material-icons">place</i>Second reveal</div>
-			      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-			    </li>
-			    <li>
-			      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third reveal</div>
-			      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-			    </li>
-			  </ul>
+  <ul class="collapsible popout" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>
+      <?php if(isset($result)){ $row = mysqli_fetch_assoc($result); echo $row['Bar_name']; }?>
+      </div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>
+      <?php if(isset($result)){ $row = mysqli_fetch_assoc($result); echo $row['Bar_name']; }?>
+      </div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>
+      <?php if(isset($result)){ $row = mysqli_fetch_assoc($result); echo $row['Bar_name']; }?>
+      </div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+  </ul>
 
     </div>
 
     <div class="col s12 m4 l2 border" style = >
-		
-		<h3>side bar</h3>
-		    <form action="register.php" method="POST">
-		        <div class="input-field">
-		          <i class="material-icons prefix">account_circle</i>
-		          <input id="icon_prefix" type="text" name = "user_Name" class="validate">
-		          <label for="icon_prefix">User Name</label>
-		        </div>
-		        <div class="input-field">
-		          <i class="material-icons prefix">vpn_key</i>
-		          <input id="icon_telephone" type="password" name = "pass" class="validate">
-		          <label for="icon_telephone">Your pass</label>
-		        </div>
-		        <button class="btn waves-effect waves-light red " style = "width: 100%;" type="submit" name="action">Sign up
- 			    	<i class="material-icons right">offline_pin</i>
- 			  	</button>
-		    </form>
-
-		   	      
-
 
  			  			    <p>Search</p>
 			<form>
-			  <div class="input-field">
-			    <select>
+			  <div class="input-field" action = "bars.php" method="GET">
+			    <select name = "search_by">
 			      <option value="" disabled selected>Search by</option>
 			      <option value="1">country</option>
 			      <option value="2">city</option>
@@ -83,22 +82,22 @@
 			    <label>Search by</label>
 			  </div>
 			  <div class="input-field ">
-         		 <input placeholder="Please enter value" id="Select" type="text" class="validate">
+         		 <input placeholder="Please enter value" id="Select" type="text" class="validate" name = "value">
         		 <label for="val">value</label>
         	  </div>
 
-        	  	<button class="btn waves-effect waves-light red " style = "width: 100%;" type="submit" name="action">Start the magic
+        	  	<button class="btn waves-effect waves-light red "  type="submit" name="action">Start the magic
  			           <i class="material-icons right">offline_pin</i>
  			      	</button>
-<a href="conn.php">aaaa</a>
-        
+
 
       </form>
  	</div>
-    
+
+</div>
 </div>
 
-            
+
 
 
 
