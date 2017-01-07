@@ -2,7 +2,7 @@
 <?php
  include 'header.php';
  include 'conn.php';
- 
+
  header('Content-Type: text/html; charset=utf-8');
  mysqli_set_charset($conn, "utf8");
 
@@ -16,22 +16,6 @@ $result = $conn -> query($sql);
 
 
 
-  <img class="mainimg" src="images/main_picture.png">
-
-  <!--   MAIN IMAGE PABAIGA   -->
-
-<!--   SEARCH'as - PRADZIA   -->
-    <form onsubmit="submitFn(this, event);">
-      <div class="search-wrapper">
-        <div class="input-holder">
-          <input type="text" class="search-input" placeholder="Type to search" />
-          <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
-            </div>
-              <span class="close" onclick="searchToggle(this, event);"></span>
-            <div class="result-container">
-        </div>
-      </div>
-    </form>
 <!--   SEARCH'as - PABAIGA   -->
 
 <!--   MAIN IMAGE PRADZIA   -->
