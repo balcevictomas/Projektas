@@ -1,8 +1,11 @@
 
-<?php 
+<?php
 include 'header.php';
 include 'php_files/conn.php';
 $temp=$_SESSION['ID'];
+
+header('Content-Type: text/html; charset=utf-8');
+mysqli_set_charset($conn, "utf8");
 
 $sql = "SELECT * FROM User WHERE ID = '$temp';";
 $result = $conn -> query($sql);

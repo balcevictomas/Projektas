@@ -2,6 +2,10 @@
 
 <?php
 include'conn.php';
+
+header('Content-Type: text/html; charset=utf-8');
+mysqli_set_charset($conn, "utf8");
+
 if(isset($_GET["search_by"]) && $_GET["search_by"] != null){
 
 switch ($_GET["search_by"]) {

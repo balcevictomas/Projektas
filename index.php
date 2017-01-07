@@ -2,6 +2,9 @@
 <?php
  include 'header.php';
  include 'conn.php';
+ 
+ header('Content-Type: text/html; charset=utf-8');
+ mysqli_set_charset($conn, "utf8");
 
  $sql ="SELECT Bar_name , Bar_description , Bar_image FROM Bars ORDER BY RAND() LIMIT 4" ;
 
