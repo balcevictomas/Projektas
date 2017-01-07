@@ -12,7 +12,10 @@
 				      <li class="collection-item"><?php if(isset($result)) {echo $row['Country']; }?></li>
 				      <li class="collection-item"><?php if(isset($result)) {echo $row['City']; }?></li>
 				      <li class="collection-item"><?php if(isset($result)) {echo $row['Address']; }?></li>
-				      <li class="collection-item"><?php if(isset($result)) {echo $row['Likes']; }?></li>
+				      <li class="collection-item"><p>Number of likes</p>
+                  <?php if(isset($result)) {echo $row['Likes']; }?>
+                  <a class="btn-floating btn-large waves-effect waves-light red right" href=<?php echo '"php_files/likes_update.php?ID='.$row['ID'].'"'?>><i class="material-icons">add</i></a></li>
+
 			    </ul>
 		      </div>
 		    </div>
