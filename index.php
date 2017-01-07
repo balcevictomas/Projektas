@@ -84,24 +84,7 @@ $result = $conn -> query($sql);
       </div>
     <!--   antro lango pabaiga   -->
     <!--   trecias langas   -->
-      <div class="col s12 m6 l3 ">
-        <div class="card z-depth-1 grey lighten-2">
-          <div class="card-image">
-            <img src=<?php $row = mysqli_fetch_assoc($result); echo '"'.$row['Bar_image'].'"'; ?>>
-            <span class="card-title"><?php echo $row['Bar_name'];  ?></span>
-          </div>
-          <div class="card-content">
-            <p class="truncate"><?php echo $row['Bar_description'];  ?></p>
-          </div>
-          <div class="card-action right-align">
-            <a id="graylink" href="#">Skaityti daugiau...</a>
-          </div>
-        </div>
-      </div>
 
-          </div>
-        </div>
-      </div>
     <!--   antro lango pabaiga   -->
     <!--   trecias langas   -->
       <div class="col s12 m6 l3 ">
