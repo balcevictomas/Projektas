@@ -17,10 +17,10 @@ $result = $conn -> query($sql);
 
 <!--   MAIN IMAGE IR SEARCH PRADZIA   -->    
 <div id="mainimangecenter">
-  <img class="mainimg" src="images/main_picture.png">
+  <img class="mainimg hoverable" src="images/main_picture.png">
       <div id="searchas">
           <form>
-              <div class="input-field">
+              <div class="input-field ">
                   <input id="centeredtext" type="text" id="autocomplete-input" class="autocomplete">
                   <label id="centeredtext" for="autocomplete-input"></label>
                   <ul class="autocomplete-content dropdown-content"></ul>
@@ -32,11 +32,11 @@ $result = $conn -> query($sql);
 <!--   MAIN IMAGE IR SEARCH PABAIGA   -->
 
         <!--   TOP 4 barai - keturi langai - PRADZIA  -->
-        <div class="row">
+  <div class="row">
           <!--   pirmas langas   -->
       <div class="col s12 m6 l3 ">
-        <div class="card z-depth-1 grey lighten-2">
-          <div class="card-image">
+        <div class="card z-depth-1 grey lighten-2 hoverable">
+          <div class="card-image ">
             <img id="center-cropped" src=<?php $row = mysqli_fetch_assoc($result); echo '"'.$row['Bar_image'].'"'; ?>>
             <span class="card-title"><?php echo $row['Bar_name'];  ?></span>
           </div>
@@ -51,7 +51,7 @@ $result = $conn -> query($sql);
     <!--   pirmo lango pabaiga   -->
     <!--   antras langas   -->
       <div class="col s12 m6 l3 ">
-        <div class="card z-depth-1 grey lighten-2">
+        <div class="card z-depth-1 grey lighten-2 hoverable">
           <div class="card-image">
             <img src=<?php $row = mysqli_fetch_assoc($result); echo '"'.$row['Bar_image'].'"'; ?>>
             <span class="card-title"><?php echo $row['Bar_name'];  ?></span>
@@ -67,11 +67,8 @@ $result = $conn -> query($sql);
       </div>
     <!--   antro lango pabaiga   -->
     <!--   trecias langas   -->
-
-    <!--   antro lango pabaiga   -->
-    <!--   trecias langas   -->
       <div class="col s12 m6 l3 ">
-        <div class="card z-depth-1 grey lighten-2">
+        <div class="card z-depth-1 grey lighten-2 hoverable">
           <div class="card-image">
             <img src=<?php $row = mysqli_fetch_assoc($result); echo '"'.$row['Bar_image'].'"'; ?>>
             <span class="card-title"><?php echo $row['Bar_name'];  ?></span>
@@ -88,7 +85,7 @@ $result = $conn -> query($sql);
     <!--   trecio lango pabaiga   -->
     <!--   ketvirtas langas   -->
       <div class="col s12 m6 l3 ">
-        <div class="card z-depth-1 grey lighten-2">
+        <div class="card z-depth-1 grey lighten-2 hoverable">
           <div class="card-image">
             <img src=<?php $row = mysqli_fetch_assoc($result); echo '"'.$row['Bar_image'].'"'; ?>>
             <span class="card-title"><?php echo $row['Bar_name'];  ?></span>
@@ -101,8 +98,7 @@ $result = $conn -> query($sql);
           </div>
         </div>
       </div>
-
-      </div>
+  </div>
       <!--   TOP 4 barai - keturi langai - PABAIGA   -->
 
 <!--   INDEX PABAIGA   -->
