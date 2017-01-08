@@ -2,14 +2,18 @@
 
 <?php
 include'conn.php';
+
+header('Content-Type: text/html; charset=utf-8');
+mysqli_set_charset($conn, "utf8");
+
 if(isset($_GET["search_by"]) && $_GET["search_by"] != null){
 
 switch ($_GET["search_by"]) {
-	case '1':	$sql_input ="WHERE Country ='".$_GET['value']."'LIMIT 3" ;	break;
-	case '2':	$sql_input = "WHERE City ='".$_GET['value']."'LIMIT 3";  break;
-	case '3':	$sql_input = "ORDER BY Likes DESC LIMIT 3";	break;
-	case '4':	$sql_input = "WHERE Bar_description LIKE'%".$_GET['value']."%' LIMIT 3";	break;
-	case '5':	$sql_input = "ORDER BY RAND() LIMIT 3";	break;
+	case '1':	$sql_input ="WHERE Country ='".$_GET['value']."' ORDER BY Likes DESC LIMIT 10" ;	break;
+	case '2':	$sql_input = "WHERE City ='".$_GET['value']."' ORDER BY Likes DESC LIMIT 10";  break;
+	case '3':	$sql_input = "ORDER BY Likes DESC LIMIT 10";	break;
+	case '4':	$sql_input = "WHERE Bar_description LIKE'%".$_GET['value']."%' ORDER BY Likes DESC LIMIT 10";	break;
+	case '5':	$sql_input = "ORDER BY RAND() LIMIT 10";	break;
 
 	default:
 		# code...
@@ -44,31 +48,16 @@ $result = $conn -> query($sql);
     <div class="col s12 m8 l10">
 
   <ul class="collapsible popout" data-collapsible="accordion">
-    <li>
-      <div class="collapsible-header"><i class="material-icons">filter_drama</i>
-      <?php if(isset($result)){ $row = mysqli_fetch_assoc($result); echo $row['Bar_name']; }?>
-      </div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">place</i>
-      <?php if(isset($result)){ $row = mysqli_fetch_assoc($result); echo $row['Bar_name']; }?>
-      </div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">whatshot</i>
-      <?php if(isset($result)){ $row = mysqli_fetch_assoc($result); echo $row['Bar_name']; }?>
-      </div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-    </li>
+<?php if (isset($result)) {
+while($row = mysqli_fetch_assoc($result)){	include 'bar_card.php';}
+}else {echo "<br><br><br><br> <h2>Sorry nothing was found</h2>";} ?>
   </ul>
 
     </div>
 
     <div class="col s12 m4 l2 border" style = >
 
- 			  			    <p>Search</p>
+ 			  			   <br><br><br><br>
 			<form>
 			  <div class="input-field" action = "bars.php" method="GET">
 			    <select name = "search_by">

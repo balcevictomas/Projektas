@@ -2,6 +2,9 @@
 <?php
  include 'header.php';
  include 'conn.php';
+ 
+ header('Content-Type: text/html; charset=utf-8');
+ mysqli_set_charset($conn, "utf8");
 
  $sql ="SELECT Bar_name , Bar_description , Bar_image FROM Bars ORDER BY RAND() LIMIT 4" ;
 
@@ -10,21 +13,30 @@ $result = $conn -> query($sql);
 ?>
 
 <!--   INDEX PRADZIA   -->
-<!--   INDEX PRADZIA   -->
-<!--   INDEX PRADZIA   -->
-<script> 
- $("input.autocomplete").autocomplete({
-    data: {
-      "Apple": null,
-      "Microsoft": null,
-      "Google": 'http://placehold.it/250x250'
-    }
-  });
-</script>
 
-<!--   MAIN IMAGE PRADZIA   -->    
+
+
+  <img class="mainimg" src="images/main_picture.png">
+
+  <!--   MAIN IMAGE PABAIGA   -->
+
+<!--   SEARCH'as - PRADZIA   -->
+    <form onsubmit="submitFn(this, event);">
+      <div class="search-wrapper">
+        <div class="input-holder">
+          <input type="text" class="search-input" placeholder="Type to search" />
+          <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+            </div>
+              <span class="close" onclick="searchToggle(this, event);"></span>
+            <div class="result-container">
+        </div>
+      </div>
+    </form>
+<!--   SEARCH'as - PABAIGA   -->
+
+<!--   MAIN IMAGE PRADZIA   -->
 <div id="mainimangecenter">
-  <img class="mainimg" src="images/main_picture.png"> 
+  <img class="mainimg" src="images/main_picture.png">
       <div id="searchas">
           <form>
               <div class="input-field">
@@ -36,6 +48,7 @@ $result = $conn -> query($sql);
     </div>
 </div>
 <!--   SEARCH'as - PABAIGA   -->
+
 
 
         <!--   TOP 4 barai - keturi langai - PRADZIA  -->
@@ -68,9 +81,13 @@ $result = $conn -> query($sql);
           </div>
           <div class="card-action right-align">
             <a id="graylink" href="#">Skaityti daugiau...</a>
+
           </div>
         </div>
       </div>
+    <!--   antro lango pabaiga   -->
+    <!--   trecias langas   -->
+
     <!--   antro lango pabaiga   -->
     <!--   trecias langas   -->
       <div class="col s12 m6 l3 ">
@@ -87,6 +104,7 @@ $result = $conn -> query($sql);
           </div>
         </div>
       </div>
+
     <!--   trecio lango pabaiga   -->
     <!--   ketvirtas langas   -->
       <div class="col s12 m6 l3 ">
@@ -108,9 +126,7 @@ $result = $conn -> query($sql);
       <!--   TOP 4 barai - keturi langai - PABAIGA   -->
 
 <!--   INDEX PABAIGA   -->
-<!--   INDEX PABAIGA   -->
-<!--   INDEX PABAIGA   -->
+
 
 
 <?php include 'footer.php'; ?>
-
