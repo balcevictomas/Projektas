@@ -6,13 +6,17 @@
  header('Content-Type: text/html; charset=utf-8');
  mysqli_set_charset($conn, "utf8");
 
- $sql ="SELECT Bar_name , Bar_description , Bar_image FROM Bars ORDER BY RAND() LIMIT 4" ;
+ $sql ="SELECT ID, Bar_name , Bar_description , Bar_image FROM Bars ORDER BY RAND() LIMIT 4" ;
 
 $result = $conn -> query($sql);
 
 ?>
 
+
+
 <!--   INDEX PRADZIA   -->
+
+
 
 
 
@@ -22,15 +26,18 @@ $result = $conn -> query($sql);
 <div id="mainimangecenter">
   <img class="mainimg" src="images/main_picture.png">
       <div id="searchas">
-          <form>
-              <div class="input-field">
-                <input type="text" id="autocomplete-input" class="autocomplete">
+          <form action = "bars.php" method="GET">
+              <div class="input-field" >
+                <input type="text" id="autocomplete-input" class="autocomplete" name="name">
                 <label for="autocomplete-input">Search</label>
+                 <ul class="autocomplete-content dropdown-content"></ul>
               </div>
             </form>
       </div>
     </div>
 </div>
+
+
 <!--   SEARCH'as - PABAIGA   -->
 
 
@@ -48,7 +55,7 @@ $result = $conn -> query($sql);
             <p class="truncate"><?php echo $row['Bar_description'];  ?></p>
           </div>
           <div class="card-action right-align">
-            <a id="graylink" href="#">Skaityti daugiau...</a>
+            <a id="graylink" href=<?php echo'"bars.php?ID='.$row['ID'].'"' ?>>Skaityti daugiau...</a>
           </div>
         </div>
       </div>
@@ -64,7 +71,7 @@ $result = $conn -> query($sql);
             <p class="truncate"><?php echo $row['Bar_description'];  ?></p>
           </div>
           <div class="card-action right-align">
-            <a id="graylink" href="#">Skaityti daugiau...</a>
+            <a id="graylink" href=<?php echo'"bars.php?ID='.$row['ID'].'"' ?>>Skaityti daugiau...</a>
 
           </div>
         </div>
@@ -84,7 +91,7 @@ $result = $conn -> query($sql);
             <p class="truncate"><?php echo $row['Bar_description'];  ?></p>
           </div>
           <div class="card-action right-align">
-            <a id="graylink" href="#">Skaityti daugiau...</a>
+            <a id="graylink" href=<?php echo'"bars.php?ID='.$row['ID'].'"' ?>>Skaityti daugiau...</a>
           </div>
         </div>
       </div>
@@ -101,7 +108,7 @@ $result = $conn -> query($sql);
             <p class="truncate"><?php echo $row['Bar_description'];  ?></p>
           </div>
           <div class="card-action right-align">
-            <a id="graylink" href="#">Skaityti daugiau...</a>
+            <a id="graylink" href=<?php echo'"bars.php?ID='.$row['ID'].'"' ?>>Skaityti daugiau...</a>
           </div>
         </div>
       </div>
