@@ -19,12 +19,13 @@ $result = $conn -> query($sql);
 <div id="mainimangecenter">
   <img class="mainimg hoverable" src="images/main_picture.png">
       <div id="searchas">
+        <form action = "bars.php" method="GET">
           <div class="input-field" >
-                 <input type="text" id="autocomplete-input" class="autocomplete" name="name">
-                  <label for="autocomplete-input">Search</label>
-                 <ul class="autocomplete-content dropdown-content"></ul>
-                </div>
-              </form>
+           <input type="text" id="autocomplete-input" class="autocomplete" name="name">
+            <label for="autocomplete-input">Search</label>
+           <ul class="autocomplete-content dropdown-content"></ul>
+          </div>
+        </form>
         </div>
       </div>
   </div>

@@ -67,7 +67,7 @@
               <img src="images/beer-bottling.gif">
             </div>
             <div class="card-content">
-              <p>Paskutinis alaus gamybos etapas yra alaus išpilstymas į butelius. </p>
+              <p>Paskutinis alaus gamybos etapas yra alaus išpilstymas į butelius. Išpilstytas alus dažniausiai brandinamas porą savaičių. Kai kurios alaus rūšys brandinamos net šešis mėnesius.</p>
             </div>
           </div>
         </div>
