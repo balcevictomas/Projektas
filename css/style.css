@@ -9,6 +9,16 @@
 /* Style The Dropdown Button */
 
 /* Wrapper */
+#centeredtext {
+text-align: center;
+font-weight: bold;
+}
+
+#center-cropped {
+  object-fit: cover;
+  width: 100%;
+}
+
 #mainimangecenter {
   position: relative;
 }
