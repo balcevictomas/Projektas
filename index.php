@@ -1,4 +1,3 @@
-
 <?php
  include 'header.php';
  include 'conn.php';
@@ -13,43 +12,24 @@ $result = $conn -> query($sql);
 ?>
 
 <!--   INDEX PRADZIA   -->
+<!--   INDEX PRADZIA   -->
+<!--   INDEX PRADZIA   -->
 
-
-
-  <img class="mainimg" src="images/main_picture.png">
-
-  <!--   MAIN IMAGE PABAIGA   -->
-
-<!--   SEARCH'as - PRADZIA   -->
-    <form onsubmit="submitFn(this, event);">
-      <div class="search-wrapper">
-        <div class="input-holder">
-          <input type="text" class="search-input" placeholder="Type to search" />
-          <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
-            </div>
-              <span class="close" onclick="searchToggle(this, event);"></span>
-            <div class="result-container">
-        </div>
-      </div>
-    </form>
-<!--   SEARCH'as - PABAIGA   -->
-
-<!--   MAIN IMAGE PRADZIA   -->
+<!--   MAIN IMAGE IR SEARCH PRADZIA   -->    
 <div id="mainimangecenter">
   <img class="mainimg" src="images/main_picture.png">
       <div id="searchas">
           <form>
               <div class="input-field">
-                <input type="text" id="autocomplete-input" class="autocomplete">
-                <label for="autocomplete-input">Search</label>
+                  <input id="centeredtext" type="text" id="autocomplete-input" class="autocomplete">
+                  <label id="centeredtext" for="autocomplete-input"></label>
+                  <ul class="autocomplete-content dropdown-content"></ul>
               </div>
             </form>
       </div>
     </div>
 </div>
-<!--   SEARCH'as - PABAIGA   -->
-
-
+<!--   MAIN IMAGE IR SEARCH PABAIGA   -->
 
         <!--   TOP 4 barai - keturi langai - PRADZIA  -->
         <div class="row">
@@ -57,7 +37,7 @@ $result = $conn -> query($sql);
       <div class="col s12 m6 l3 ">
         <div class="card z-depth-1 grey lighten-2">
           <div class="card-image">
-            <img src=<?php $row = mysqli_fetch_assoc($result); echo '"'.$row['Bar_image'].'"'; ?>>
+            <img id="center-cropped" src=<?php $row = mysqli_fetch_assoc($result); echo '"'.$row['Bar_image'].'"'; ?>>
             <span class="card-title"><?php echo $row['Bar_name'];  ?></span>
           </div>
           <div class="card-content">
@@ -126,7 +106,5 @@ $result = $conn -> query($sql);
       <!--   TOP 4 barai - keturi langai - PABAIGA   -->
 
 <!--   INDEX PABAIGA   -->
-
-
 
 <?php include 'footer.php'; ?>
