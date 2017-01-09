@@ -36,8 +36,7 @@ session_start()
         <li><a class="white-text waves-effect btn-flat myslqbuttons" href="news.php">Naujienos</a></li>
         <li><a class="white-text waves-effect btn-flat myslqbuttons" href="bars.php">Barai</a></li>
         <li><a class="white-text waves-effect btn-flat myslqbuttons" href="craft.php">Craft Alus</a></li>
-        <li><a class="white-text waves-effect btn-flat myslqbuttons" href="#">Apie mus</a></li>
-        <li><a class="white-text waves-effect btn-flat myslqbuttons" href="story.php">Our Story</a></li>
+        <li><a class="white-text waves-effect btn-flat myslqbuttons" href="story.php">Apie mus</a></li>
       </ul>
       <ul class="right hide-on-med-and-down">
         <li><a class="" href="login.php?log=1"> <?php if(isset($_SESSION['ID'])){echo "Log Out";}else{echo "Log in";} ?></a></li>
@@ -48,8 +47,7 @@ session_start()
         <li><a href="news.php">Naujienos</a></li>
         <li><a href="bars.php">Barai</a></li>
         <li><a href="craft.php">Craft Alus</a></li>
-        <li><a href="#">Apie mus</a></li>
-        <li><a href="story.php">Our Story</a></li>
+        <li><a href="story.php">Apie mus</a></li>
         <li><a href="login.php?log=1"><?php if(isset($_SESSION['ID'])){echo "Log Out";}else{echo "Log in";} ?></a></li>
         <li><a href="login.php?log=2"><?php if(isset($_SESSION['ID'])){echo "My profile";}else{echo "Register";} ?></a></li>
       </ul>

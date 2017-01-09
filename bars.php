@@ -2,22 +2,29 @@
 
 <?php
 include'conn.php';
+
+header('Content-Type: text/html; charset=utf-8');
+mysqli_set_charset($conn, "utf8");
+
+if(isset($_GET['ID'])){$sql_input = "WHERE ID =".$_GET['ID'];
+$sql ="SELECT * FROM Bars ".$sql_input;
+$result = $conn -> query($sql);}
+
+if(isset($_GET['name'])){$sql_input = "WHERE Bar_name LIKE'%".$_GET['name']."%' ORDER BY Likes DESC LIMIT 10";
+$sql ="SELECT * FROM Bars ".$sql_input;
+$result = $conn -> query($sql);}
+
 if(isset($_GET["search_by"]) && $_GET["search_by"] != null){
 
 switch ($_GET["search_by"]) {
-	case '1':	$sql_input ="WHERE Country ='".$_GET['value']."'LIMIT 3" ;	break;
-	case '2':	$sql_input = "WHERE City ='".$_GET['value']."'LIMIT 3";  break;
-	case '3':	$sql_input = "ORDER BY Likes DESC LIMIT 3";	break;
-	case '4':	$sql_input = "WHERE Bar_description LIKE'%".$_GET['value']."%' LIMIT 3";	break;
-	case '5':	$sql_input = "ORDER BY RAND() LIMIT 3";	break;
+	case '1':	$sql_input ="WHERE Country ='".$_GET['value']."' ORDER BY Likes DESC LIMIT 10" ;	break;
+	case '2':	$sql_input = "WHERE City ='".$_GET['value']."' ORDER BY Likes DESC LIMIT 10";  break;
+	case '3':	$sql_input = "ORDER BY Likes DESC LIMIT 10";	break;
+	case '4':	$sql_input = "WHERE Bar_description LIKE'%".$_GET['value']."%' ORDER BY Likes DESC LIMIT 10";	break;
+	case '5':	$sql_input = "ORDER BY RAND() LIMIT 10";	break;
 
-	default:
-		# code...
-		break;
 }
 $sql ="SELECT * FROM Bars ".$sql_input;
-
-
 $result = $conn -> query($sql);
 
 
@@ -26,49 +33,21 @@ $result = $conn -> query($sql);
 
 
 
-
-
-
-
-
-<!--  <div class="carousel carousel-slider">
-    <a class="carousel-item" href="#one!"><img src="https://cdn.pixabay.com/photo/2015/09/24/20/36/beer-barrel-956322_960_720.jpg"></a>
-    <a class="carousel-item" href="#two!"><img src="https://cdn.pixabay.com/photo/2014/08/26/15/35/beer-428121_960_720.jpg"></a>
-    <a class="carousel-item" href="#three!"><img src="https://cdn.pixabay.com/photo/2015/07/10/17/53/cheers-839865_960_720.jpg"></a>
-    <a class="carousel-item" href="#four!"><img src="https://cdn.pixabay.com/photo/2013/11/12/01/29/bar-209148_960_720.jpg"></a>
-  </div>
- -->
-
  <div class="row">
 
     <div class="col s12 m8 l10">
 
   <ul class="collapsible popout" data-collapsible="accordion">
-    <li>
-      <div class="collapsible-header"><i class="material-icons">filter_drama</i>
-      <?php if(isset($result)){ $row = mysqli_fetch_assoc($result); echo $row['Bar_name']; }?>
-      </div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">place</i>
-      <?php if(isset($result)){ $row = mysqli_fetch_assoc($result); echo $row['Bar_name']; }?>
-      </div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">whatshot</i>
-      <?php if(isset($result)){ $row = mysqli_fetch_assoc($result); echo $row['Bar_name']; }?>
-      </div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-    </li>
+<?php if (isset($result)) {
+while($row = mysqli_fetch_assoc($result)){	include 'bar_card.php';}
+}else {echo "<br><br><br><br> <h2>Sorry nothing was found</h2>";} ?>
   </ul>
 
     </div>
 
     <div class="col s12 m4 l2 border" style = >
 
- 			  			    <p>Search</p>
+ 			  			   <br><br><br><br>
 			<form>
 			  <div class="input-field" action = "bars.php" method="GET">
 			    <select name = "search_by">
